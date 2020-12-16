@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hello World!</title>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+	<style>
+		html {
+			font-family: "Manrope", sans-serif;
+			margin: auto;
+ 		}
+		body {
+			padding: 10%;
+		}
+		h1 {
+			font-size: 600%;
+			color: white;
+			transition: ease all 5s;
+		}
+		button {
+			border-style: solid;
+			border-color: #2980b9;
+			color: #2980b9;
+			background-color: white;
+			padding: 40px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-align: center;
+			border-radius: 20px;
+			font-family: "Manrope", sans-serif;
+			outline:none;
+			cursor: pointer;
+			transition: ease all 0.5s;
+		}
+
+		button:hover {
+			transform:scale(1.2);
+		}
+	</style>
+</head>
+
+<body>
+	<h1 id="greeting">Hello World!</h1>
+	<h3 id="warning">Machen Sie sich gefasst.<br>Wenn Sie auf diesen Button klicken, wird sich alles ändern.</h3>
+	<Button id="greetButton">BUTTON</Button>
+	<script type="text/javascript">
+	document.getElementById("greetButton").onclick = function() {
+		document.getElementById("greeting").style.color = "black";
+		document.getElementById("greetButton").remove();
+		document.getElementById("warning").remove();
+	};
+	</script>
+</body>
+
+</html>
